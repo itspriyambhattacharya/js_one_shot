@@ -15,3 +15,11 @@ const user = {
   isLoggedIn: false,
   lastLoginDays: ["Monday", "Saturday"],
 };
+
+// Accessing object elements
+
+console.log(user.email);
+console.log(user["age"]);
+console.log(
+  `The name of the user is ${user.firstName} ${user.lastName}\nAge is ${user.age}\nLives in ${user["location"]}`
+);
