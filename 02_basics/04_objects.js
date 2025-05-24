@@ -98,3 +98,13 @@ const arr = [
 ];
 
 console.log(arr[1].email);
+
+console.log(`Object 1 is ${JSON.stringify(obj1)}`);
+
+// Array from Object Keys
+let a1 = Object.keys(obj1);
+console.log(`The keys of obj1 are: ${a1}`);
+
+// Array from Object Values
+let a2 = Object.values(obj1);
+console.log(`The values of obj1 are: ${a2}`);
