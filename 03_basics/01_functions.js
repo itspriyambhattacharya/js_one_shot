@@ -49,3 +49,12 @@ const res2 = tryObject({
 
 console.log(`User 1 is ${res1}`);
 console.log(`User 2 is ${res2}`);
+
+// Passing array to function
+
+const a1 = [12, 4, 56, 42];
+function displaySecondValue(arr) {
+  console.log(arr[1]);
+}
+
+displaySecondValue(a1);
