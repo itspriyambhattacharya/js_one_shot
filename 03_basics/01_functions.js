@@ -32,3 +32,20 @@ function tryRest(v1, v2, ...val) {
 
 const arr = tryRest(10, 20, 45, 32, 67);
 console.log(arr);
+
+// Passing object to function
+
+function tryObject(obj) {
+  return `Username is ${obj.username} and age is ${obj.age}`;
+}
+
+const user = { id: 1, username: "itspriyambhattacharya", age: 23 };
+const res1 = tryObject(user);
+const res2 = tryObject({
+  id: 2,
+  username: "Abhijeet",
+  age: 23,
+});
+
+console.log(`User 1 is ${res1}`);
+console.log(`User 2 is ${res2}`);
