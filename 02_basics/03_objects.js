@@ -23,3 +23,17 @@ console.log(user["age"]);
 console.log(
   `The name of the user is ${user.firstName} ${user.lastName}\nAge is ${user.age}\nLives in ${user["location"]}`
 );
+
+// Using a symbol as key
+
+const mySymbol = Symbol("key1");
+
+const obj = {
+  fname: "Priyam",
+  lname: "Bhattacharya",
+  age: 23,
+  [mySymbol]: "myKey1",
+};
+
+console.log(obj[mySymbol]);
+console.log(typeof obj[mySymbol]);
