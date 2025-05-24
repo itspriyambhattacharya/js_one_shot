@@ -108,3 +108,8 @@ console.log(`The keys of obj1 are: ${a1}`);
 // Array from Object Values
 let a2 = Object.values(obj1);
 console.log(`The values of obj1 are: ${a2}`);
+
+// Array of Arrays from each key-value pair
+
+let a3 = Object.entries(obj1);
+console.log(`The entries of obj1 are: ${JSON.stringify(a3)}`);
