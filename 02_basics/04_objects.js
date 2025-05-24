@@ -73,3 +73,6 @@ console.log(obj3);
 
 obj3 = { ...obj1, ...obj2 };
 console.log(`The correct way of merging objects: ${JSON.stringify(obj3)}`);
+
+const obj4 = Object.assign({}, obj1, obj2);
+console.log(`Merging objects using Object.assign(): ${JSON.stringify(obj4)}`);
