@@ -49,3 +49,17 @@ Object.freeze(obj);
 
 obj.age = 24;
 console.log(`After freeze ${obj}`);
+
+// Function in Object
+
+user.greet = function () {
+  console.log(`Hello User`);
+};
+
+user.greet2 = function () {
+  console.log(`Hello ${this.firstName} ${this.lastName}`);
+};
+
+console.log(user);
+console.log(user.greet());
+console.log(user.greet2());
