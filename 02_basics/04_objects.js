@@ -1,7 +1,9 @@
 // singleton object
-const user = new Object();
+// const user = new Object();
 
 // non-singleton object
+
+/*
 const user2 = {
   id: 45,
 };
@@ -17,3 +19,5 @@ console.log(
     user
   )}\nNon-singleton object: ${JSON.stringify(user2)}`
 );
+
+*/
