@@ -21,3 +21,39 @@ console.log(
 );
 
 */
+const tinderUser = {};
+
+tinderUser.id = "123abc";
+tinderUser.name = "Sammy";
+tinderUser.isLoggedIn = false;
+
+console.log(tinderUser);
+
+const regularUser = {
+  email: "some@gmail.com",
+  fullName: {
+    userFullName: {
+      firstName: "Priyam",
+      lastName: "Bhattacharya",
+    },
+  },
+};
+
+console.log(`The full object is ${JSON.stringify(regularUser)}`);
+console.log(
+  `The object after opening nesting one level is ${JSON.stringify(
+    regularUser.fullName
+  )}`
+);
+
+console.log(
+  `The object after opening nesting two level is ${JSON.stringify(
+    regularUser.fullName.userFullName
+  )}`
+);
+
+console.log(
+  `The object after opening nesting three level is ${JSON.stringify(
+    regularUser.fullName.userFullName.firstName
+  )}`
+);
