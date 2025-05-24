@@ -113,3 +113,14 @@ console.log(`The values of obj1 are: ${a2}`);
 
 let a3 = Object.entries(obj1);
 console.log(`The entries of obj1 are: ${JSON.stringify(a3)}`);
+
+// Object Destructuring
+
+const course = {
+  id: "abc123",
+  name: "Javascript",
+  instructor: "Hitesh",
+  price: 999,
+};
+let { instructor: ins } = course; // object destructuring
+console.log(`THe name of the instructor is: ${ins}`);
