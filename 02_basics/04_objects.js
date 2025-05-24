@@ -57,3 +57,19 @@ console.log(
     regularUser.fullName.userFullName.firstName
   )}`
 );
+
+// Merging Objects
+
+const obj1 = { 1: "a", 2: "b" };
+const obj2 = {
+  3: "c",
+  4: "d",
+};
+
+// wrong method of merging
+
+let obj3 = { obj1, obj2 };
+console.log(obj3);
+
+obj3 = { ...obj1, ...obj2 };
+console.log(`The correct way of merging objects: ${JSON.stringify(obj3)}`);
