@@ -123,4 +123,4 @@ const course = {
   price: 999,
 };
 let { instructor: ins } = course; // object destructuring
-console.log(`THe name of the instructor is: ${ins}`);
+console.log(`The name of the instructor is: ${ins}`);
