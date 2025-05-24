@@ -33,7 +33,19 @@ const obj = {
   lname: "Bhattacharya",
   age: 23,
   [mySymbol]: "myKey1",
+  location: "Kolkata",
 };
 
 console.log(obj[mySymbol]);
 console.log(typeof obj[mySymbol]);
+
+console.log(obj);
+obj.location = "Mumbai";
+console.log(obj);
+
+// Freezing an object
+
+Object.freeze(obj);
+
+obj.age = 24;
+console.log(`After freeze ${obj}`);
