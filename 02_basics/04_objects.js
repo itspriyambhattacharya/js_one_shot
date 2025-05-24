@@ -76,3 +76,25 @@ console.log(`The correct way of merging objects: ${JSON.stringify(obj3)}`);
 
 const obj4 = Object.assign({}, obj1, obj2);
 console.log(`Merging objects using Object.assign(): ${JSON.stringify(obj4)}`);
+
+// Array of Objects
+
+const arr = [
+  {
+    id: 1,
+    name: "Harry",
+    email: "harry@gmail.com",
+  },
+  {
+    id: 2,
+    name: "Priyam",
+    email: "itspriyam@gmail.com",
+  },
+  {
+    id: 3,
+    name: "Hitesh",
+    email: "hitesh@google.com",
+  },
+];
+
+console.log(arr[1].email);
