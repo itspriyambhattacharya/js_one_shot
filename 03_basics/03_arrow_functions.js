@@ -32,3 +32,13 @@ const two = function () {
 two();
 
 // arrow functions
+
+console.log("\nArrow Functions start:\n");
+
+const three = () => {
+  const uname = "harry";
+  console.log(this);
+  // console.log(this.uname); // outout -> undefined
+};
+
+three();
