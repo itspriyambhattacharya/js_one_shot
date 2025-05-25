@@ -19,8 +19,20 @@ function one() {
     const age = 23;
     console.log(`Username: ${uname}`);
   }
-  // console.log(`Age: ${age}`);
+  // console.log(`Age: ${age}`); ===> error
   two();
 }
 
 one();
+
+// Nested if and closure
+
+if (true) {
+  const uname = "priyam";
+  if (uname === "priyam") {
+    const age = 23;
+    console.log(uname + " " + age);
+  }
+  // console.log(age); ===> error
+}
+// console.log(uname); ===> error
