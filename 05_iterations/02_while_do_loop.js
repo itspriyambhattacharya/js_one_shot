@@ -12,3 +12,14 @@ while (i < arr.length) {
   console.log(arr[i]);
   i++;
 }
+
+// do-while loop
+
+let score = 100;
+do {
+  /*
+  Exit-control loop: The body of the loop will get executed at least once even if the condition is false.
+  */
+  console.log(`Score is: ${score}`);
+  score++;
+} while (score <= 10);
