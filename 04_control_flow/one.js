@@ -9,3 +9,13 @@ if (isLoggedIn) {
 } else {
   console.log("Not Logged In");
 }
+
+// <, >, <=, >=, ==, !=, ===(strict equal), !==
+
+if (2 == "2") {
+  console.log("Executed");
+}
+
+if (2 === "2") {
+  console.log("Will not get executed");
+}
