@@ -30,3 +30,5 @@ const two = function () {
 };
 
 two();
+
+// arrow functions
