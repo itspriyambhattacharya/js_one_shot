@@ -42,3 +42,17 @@ const three = () => {
 };
 
 three();
+
+const addTwo = (n1, n2) => {
+  return n1 + n2;
+};
+
+let x = addTwo(3, 4);
+let y = addTwo(5, 7);
+console.log(`\nResult 1 is ${x}\nResult 2 is ${y}`);
+
+// Implicite return
+
+const impRet = (a, b) => a - b;
+
+console.log(impRet(7, 5));
