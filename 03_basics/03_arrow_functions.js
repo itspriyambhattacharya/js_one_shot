@@ -56,3 +56,13 @@ console.log(`\nResult 1 is ${x}\nResult 2 is ${y}`);
 const impRet = (a, b) => a - b;
 
 console.log(impRet(7, 5));
+
+// Wrapping in parenthesis vs braces
+
+const t1 = () => 34;
+console.log(t1);
+console.log(t1());
+
+const t2 = () => ({ username: "Priyam" }); // without wrapping into parenthesis, we can't return an object. So wrapping into parenthesis is necessary.
+console.log(t2);
+console.log(t2());
