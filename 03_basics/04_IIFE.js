@@ -12,3 +12,13 @@ Syntax: (write function definition here)(); --> this semicolon here is compulsor
 (() => {
   console.log("Hello World 2");
 })();
+
+// IIFE with parameters
+
+(function f2(name) {
+  console.log(`Hello ${name}`);
+})("Priyam");
+
+((a, b) => {
+  console.log(`The result is ${a + b}`);
+})(3, 5);
