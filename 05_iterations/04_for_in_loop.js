@@ -6,5 +6,5 @@ const language = {
 };
 
 for (const key in language) {
-  console.log(key);
+  console.log(`Key is ${key}, Value is ${language[key]}`);
 }
