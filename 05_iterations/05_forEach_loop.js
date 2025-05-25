@@ -19,6 +19,8 @@ language.forEach((val, idx, arr) => {
 
 // Array of Objects
 
+console.log("\nArray of Objects");
+
 const users = [
   {
     id: 1,
@@ -41,3 +43,7 @@ const users = [
     age: 22,
   },
 ];
+
+users.forEach((val) => {
+  console.log(val.name);
+});
