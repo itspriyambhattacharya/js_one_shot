@@ -7,3 +7,19 @@ for (const element of arr) {
   }
   console.log(element);
 }
+
+// Map in Javascript
+
+const map = new Map();
+
+map.set("name", "Priyam Bhattacharya");
+map.set("email", "itspriyambhattacarya@gmail.com");
+map.set("age", 23);
+
+console.log("\nDisplaying a map");
+map.delete("email");
+for (const element of map) {
+  console.log(element);
+}
+
+console.log(map.get("age"));
