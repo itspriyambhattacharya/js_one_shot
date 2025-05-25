@@ -36,3 +36,18 @@ if (true) {
   // console.log(age); ===> error
 }
 // console.log(uname); ===> error
+
+// Hoisting
+
+addOne(5);
+
+function addOne(val) {
+  return val + 1;
+}
+
+// addTwo(5); ===> error
+const addTwo = function (val) {
+  return val + 2;
+};
+
+addTwo(5);
