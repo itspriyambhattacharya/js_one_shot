@@ -10,3 +10,15 @@ if (arr.length === 0) {
 if (Object.keys(obj).length === 0) {
   console.log("Object is Empty");
 }
+
+// Nullish Coalescing Operator(??): null, undefined
+
+let val1 = 10 ?? 15;
+console.log(val1);
+val1 = null ?? 15;
+console.log(val1);
+val1 = undefined ?? 15;
+console.log(val1);
+
+val1 = 20 ?? 15 ?? 10;
+console.log(val1);
