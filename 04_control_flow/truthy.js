@@ -22,3 +22,8 @@ console.log(val1);
 
 val1 = 20 ?? 15 ?? 10;
 console.log(val1);
+
+// Ternary Operator
+
+const price = 100;
+price > 80 ? console.log("Greater than 80") : console.log("Less than 80");
