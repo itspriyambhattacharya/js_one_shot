@@ -48,3 +48,8 @@ createdDiv.title = "dynamic div created using javascript";
 createdDiv.style.padding = "10px";
 createdDiv.style.backgroundColor = "green";
 console.log(createdDiv);
+
+// createdDiv.innerText = "This a dynamically created div";
+
+const textNode = document.createTextNode("This a dynamically created div");
+createdDiv.appendChild(textNode);
