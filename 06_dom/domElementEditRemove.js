@@ -14,3 +14,22 @@ const languageName = "Java";
 addLanguage(languageName);
 addLanguage("Python");
 addLanguage("Rust");
+
+// ++++++++++++++++++++++++++++++++ Edit a Content in DOM Dynamically ++++++++++++++++++++++++++++++++
+
+/**
+ * Replace the 2nd language of the list with "Fortran"
+ */
+
+console.log("Edit");
+
+const secondLi = document.querySelector(".language>li:nth-child(2)");
+console.log(secondLi);
+const newLi = document.createElement("li");
+/*
+const newText = document.createTextNode("Mojo");
+newLi.appendChild(newText);
+*/
+newLi.textContent = "Fortran";
+console.log(newLi);
+secondLi.replaceWith(newLi);
