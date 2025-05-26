@@ -34,3 +34,17 @@ console.log(sibling);
 // Displaying the child nodes (IMPORTANT)
 
 console.log("NODES: ", parent.childNodes);
+
+// ++++++++++++++++++++++++++++++++ Creating an element using Javascript ++++++++++++++++++++++++++++++++
+
+const createdDiv = document.createElement("div");
+console.log(createdDiv);
+
+// ++++++++++++++++++++++++++++++++ Adding attributes ++++++++++++++++++++++++++++++++
+
+createdDiv.className = "cl1 cl2";
+createdDiv.id = "myDiv";
+createdDiv.title = "dynamic div created using javascript";
+createdDiv.style.padding = "10px";
+createdDiv.style.backgroundColor = "green";
+console.log(createdDiv);
