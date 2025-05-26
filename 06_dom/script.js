@@ -39,3 +39,5 @@ fLi.style.backgroundColor = "green";
 
 const allLi = document.querySelectorAll("ul > li");
 console.log(allLi);
+const arrFromNodeList = Array.from(allLi);
+console.log(arrFromNodeList); // Converting NodeList to Array
