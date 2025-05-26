@@ -3,6 +3,8 @@ console.log(form);
 const guess = document.querySelector(".guesses");
 console.log(guess);
 const msg = document.querySelector(".lowOrHi");
+let lastResult = document.querySelector(".lastResult");
+let chances = 10;
 
 const low = 1;
 const high = 100;
@@ -22,10 +24,19 @@ form.addEventListener("submit", (e) => {
 
   if (val < r) {
     msg.innerHTML = `Low`;
+    chances--;
+    lastResult.innerHTML = `${chances}`;
   } else if (val > r) {
     msg.innerHTML = `High`;
+    chances--;
+    lastResult.innerHTML = `${chances}`;
   } else {
     msg.innerHTML = `Value Matched`;
     console.log("Value Matched");
+  }
+  if (chances === 0) {
+    msg.innerHTML = `No chances left, you loose.`;
+    const subBtn = document.getElementById("subt");
+    subBtn.setAttribute("disabled", true);
   }
 });
