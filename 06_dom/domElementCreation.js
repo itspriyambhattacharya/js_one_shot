@@ -18,7 +18,5 @@ for (let i = 0; i < childrenOfParent.length; i++) {
 
 const firstChild = parent.firstElementChild;
 const lastChild = parent.lastElementChild;
-
-console.log(
-  `First child of ${parent} is: ${firstChild}\nLast child of ${parent} is: ${lastChild}`
-);
+console.log(firstChild);
+console.log(lastChild);
