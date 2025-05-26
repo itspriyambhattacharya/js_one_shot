@@ -25,3 +25,8 @@ console.log(lastChild);
 const child1 = document.querySelector(".day");
 console.log(child1);
 console.log(child1.parentElement);
+
+// Selecting the next sibling
+
+const sibling = child1.nextElementSibling;
+console.log(sibling);
