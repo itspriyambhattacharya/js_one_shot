@@ -53,3 +53,10 @@ console.log(createdDiv);
 
 const textNode = document.createTextNode("This a dynamically created div");
 createdDiv.appendChild(textNode);
+
+// Adding the div created to HTML document
+
+document.body.appendChild(createdDiv);
+createdDiv.style.marginTop = "10px";
+createdDiv.style.borderRadius = "15px";
+createdDiv.style.textAlign = "center";
