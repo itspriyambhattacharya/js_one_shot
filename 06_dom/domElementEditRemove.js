@@ -48,3 +48,13 @@ newLiTs.appendChild(tsTxt);
 console.log(newLiTs);
 
 firstLanguage.replaceWith(newLiTs);
+
+// ++++++++++++++++++++++++++++++++ Removing a Content in DOM Dynamically ++++++++++++++++++++++++++++++++
+
+/**
+ *  Delete the last element of the list.
+ */
+
+const lastLi = document.querySelector(".language>li:last-child");
+console.log(lastLi);
+lastLi.remove();
