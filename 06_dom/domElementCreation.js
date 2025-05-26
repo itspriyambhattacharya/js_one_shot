@@ -30,3 +30,7 @@ console.log(child1.parentElement);
 
 const sibling = child1.nextElementSibling;
 console.log(sibling);
+
+// Displaying the child nodes (IMPORTANT)
+
+console.log("NODES: ", parent.childNodes);
