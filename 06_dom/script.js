@@ -26,3 +26,11 @@ console.log(it);
 
 const ihtml = title.innerHTML;
 console.log(`The innerHTML is: ${ihtml}`);
+
+// querySelector
+
+const lst = document.querySelector("ul");
+console.log(lst);
+const fLi = lst.querySelector("li");
+console.log(fLi);
+fLi.style.backgroundColor = "green";
