@@ -20,3 +20,8 @@ const firstChild = parent.firstElementChild;
 const lastChild = parent.lastElementChild;
 console.log(firstChild);
 console.log(lastChild);
+
+// Accessing the parent from from child
+const child1 = document.querySelector(".day");
+console.log(child1);
+console.log(child1.parentElement);
