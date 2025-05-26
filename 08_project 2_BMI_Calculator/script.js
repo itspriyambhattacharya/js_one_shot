@@ -22,6 +22,5 @@ form.addEventListener("submit", (e) => {
     let ans = wt / ((ht * ht) / 10000);
     ans = ans.toFixed(2);
     res.innerHTML = `${ans}`;
-    // console.log("The result is: ", res);
   }
 });
