@@ -13,3 +13,12 @@ console.log("Display using Traditional for loop");
 for (let i = 0; i < childrenOfParent.length; i++) {
   console.log(childrenOfParent[i].innerHTML);
 }
+
+// Access the first and last child of the parent
+
+const firstChild = parent.firstElementChild;
+const lastChild = parent.lastElementChild;
+
+console.log(
+  `First child of ${parent} is: ${firstChild}\nLast child of ${parent} is: ${lastChild}`
+);
