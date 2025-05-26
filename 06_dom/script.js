@@ -34,3 +34,8 @@ console.log(lst);
 const fLi = lst.querySelector("li");
 console.log(fLi);
 fLi.style.backgroundColor = "green";
+
+// querySelectorAll
+
+const allLi = document.querySelectorAll("ul > li");
+console.log(allLi);
