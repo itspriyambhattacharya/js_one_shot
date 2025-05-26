@@ -22,7 +22,10 @@ form.addEventListener("submit", (e) => {
 
   if (val < r) {
     msg.innerHTML = `Low`;
-  } else {
+  } else if (val > r) {
     msg.innerHTML = `High`;
+  } else {
+    msg.innerHTML = `Value Matched`;
+    console.log("Value Matched");
   }
 });
