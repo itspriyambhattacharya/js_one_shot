@@ -1,0 +1,14 @@
+* {
+  background-color: #212121;
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
