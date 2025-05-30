@@ -56,9 +56,8 @@ const promise4 = new Promise((resolve, reject) => {
 promise4
   .then((user) => {
     console.log(user);
-    let userObj = JSON.parse(user);
-    console.log(userObj.uname);
-    console.log(userObj.password);
+    console.log(user.uname);
+    console.log(user.password);
   })
   .catch((err) => {
     console.log("The error is  " + err);
@@ -66,3 +65,27 @@ promise4
   .finally(() => {
     console.log("Promise 4 completed successfully.");
   });
+
+// promise 5
+
+const promise5 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let error = false;
+    if (!error) {
+      resolve({ uname: "javascript", password: "javascript1234" });
+    } else {
+      reject("Javascript is rejected");
+    }
+  }, 1000);
+});
+
+async function consume5() {
+  try {
+    const res = await promise5; // promise5 is an object, so no parenthesis
+    console.log(res);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+consume5();
