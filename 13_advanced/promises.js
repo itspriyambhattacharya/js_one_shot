@@ -39,3 +39,30 @@ promise3.then((val) => {
 
   console.log("Promise 3 Resolved");
 });
+
+// promise 4
+
+const promise4 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let error = false;
+    if (!error) {
+      resolve({ uname: "java", password: "java1234" });
+    } else {
+      reject("Java is rejected");
+    }
+  }, 1000);
+});
+
+promise4
+  .then((user) => {
+    console.log(user);
+    let userObj = JSON.parse(user);
+    console.log(userObj.uname);
+    console.log(userObj.password);
+  })
+  .catch((err) => {
+    console.log("The error is  " + err);
+  })
+  .finally(() => {
+    console.log("Promise 4 completed successfully.");
+  });
