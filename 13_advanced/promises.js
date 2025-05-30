@@ -1,5 +1,6 @@
 // Promises in Javascript
 // Promise 1
+
 const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("Learning promise 1 in javascript");
@@ -88,3 +89,20 @@ async function consume5() {
 }
 
 consume5();
+
+// fetching using async await
+
+async function fetchUser() {
+  const users = await fetch("https://jsonplaceholder.typicode.com/users");
+
+  const data = await users.json();
+  console.log(`Typeof user is ${typeof users}`);
+  console.log(`Typeof data is ${typeof data}`);
+  console.log(data);
+  console.log(data[0]);
+  console.log(data[0].name);
+  console.log(data[0].email);
+  console.log(data[0].address.city);
+}
+
+fetchUser();
