@@ -30,7 +30,7 @@ clearTimeout(dsp); // not a good way to clear setTimeout(), WE usually use clear
 // clearing a setTimeout() when an event occurs
 
 const btn = document.getElementById("stop");
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
   clearTimeout(changeHeading);
   console.log("Cleared setTimeout() successfully");
 });
