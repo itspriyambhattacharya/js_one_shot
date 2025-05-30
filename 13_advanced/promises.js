@@ -93,9 +93,9 @@ consume5();
 // fetching using async await
 
 async function fetchUser() {
-  const users = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = await fetch("https://jsonplaceholder.typicode.com/users"); // fetch returns a promise object
 
-  const data = await users.json();
+  const data = await users.json(); // returs a promise object
   console.log(`Typeof user is ${typeof users}`);
   console.log(`Typeof data is ${typeof data}`);
   console.log(data);
@@ -106,3 +106,17 @@ async function fetchUser() {
 }
 
 fetchUser();
+
+// fetching using then-catch
+
+const fet = fetch("https://jsonplaceholder.typicode.com/users");
+fet
+  .then((rawData) => {
+    return rawData.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log("Error ocured using fetch-then");
+  });
