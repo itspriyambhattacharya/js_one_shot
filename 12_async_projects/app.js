@@ -17,11 +17,20 @@ setTimeout(() => {
   console.log("Hello Priyam");
 }, 4000);
 
-setTimeout(() => {
+const changeHeading = setTimeout(() => {
   const h1 = document.querySelector("h1");
   console.log(h1);
   h1.innerHTML = "Asynchronous Javascript";
+  console.log("Not cleared");
 }, 10000);
 
 //clearTimeout(reference of setTimeout()) - used to clear a setTimeout() API
 clearTimeout(dsp); // not a good way to clear setTimeout(), WE usually use clearTimeout() or clearInterval() on some event
+
+// clearing a setTimeout() when an event occurs
+
+const btn = document.getElementById("stop");
+btn.addEventListener("click", () => {
+  clearTimeout(changeHeading);
+  console.log("Cleared setTimeout() successfully");
+});
