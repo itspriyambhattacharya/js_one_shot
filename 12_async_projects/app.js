@@ -16,3 +16,9 @@ setTimeout(display, 3000); // giving reference of the functions because the func
 setTimeout(() => {
   console.log("Hello Priyam");
 }, 4000);
+
+setTimeout(() => {
+  const h1 = document.querySelector("h1");
+  console.log(h1);
+  h1.innerHTML = "Asynchronous Javascript";
+}, 10000);
