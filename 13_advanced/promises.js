@@ -67,7 +67,6 @@ promise4
   });
 
 // promise 5
-
 const promise5 = new Promise((resolve, reject) => {
   setTimeout(() => {
     let error = false;
