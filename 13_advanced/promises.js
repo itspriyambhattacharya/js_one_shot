@@ -34,6 +34,8 @@ const promise3 = new Promise((resolve, reject) => {
   }, 3000);
 });
 
-promise3.then(() => {
+promise3.then((val) => {
+  console.log(val);
+
   console.log("Promise 3 Resolved");
 });
