@@ -8,6 +8,10 @@ xhr.onreadystatechange = function () {
 
   if (xhr.readyState === 4) {
     console.log(this.responseText);
+    let data = this.responseText;
+    data = JSON.parse(data);
+    console.log(typeof data);
+    console.log(data.name);
   }
 }; // mmonitors continuously
 
